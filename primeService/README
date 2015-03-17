@@ -1,0 +1,129 @@
+CS542 Design Patterns
+Spring 2015
+PROJECT 1 README FILE
+
+Due Date:MONDAY, MARCH,9, 2015
+Submission Date:MONDAY, MARCH,9, 2015
+Grace Period Used This Project: 12 Days
+Grace Period Remaining: 0 Days
+
+
+Author: Sandeep Vempati
+e-mail: svempat2@binghamton.edu
+
+
+PURPOSE:
+
+This is a kind of chat room program in which we will be creating a server with the port number given from the server . The user can also be logged in as the client and there can be multiple clients . the clients can input various values to the server and the server will check whether the given number is prime or not . If the given number is prime it server will store the client name and the prime number in the data structure .
+
+I have used the hashMap as the datastructure to store the data of the user.
+
+
+
+PERCENT COMPLETE:
+
+ "I believe I have completed 100% of this project."
+
+
+PARTS THAT ARE NOT COMPLETE:
+
+N/A
+
+
+BUGS:
+
+N/A
+
+
+FILES:
+
+Included with this project are 16 files:
+
+README, the text file you are present viewing
+build.xml, the ant file required for building ,cleaning and runing
+PrimeDriver.java , contains the main driver to start the client driver and server driver according to the user input
+ClientDriver.java , Contains the driver to drive the client according to user input
+ClientMenu.java , Contains the menu for the client to use
+ClientInterface.java , contains the menu which the ClientDriver has
+ServerInterface.java , contains the methods implemented by the ServerDriver
+ServerDriver.java , main method which contains driver code for Server 
+AllPrimeQueries.java , contains the datastructure and it's related operations for client data
+ServerMenu.java , contains the menu to display the server menu
+PrimeServerSocket.java , contains the code for creaton of server socket  
+PrimeServerWorker.java , contains the code to create threads to accept several connections from clients
+PrimeClientSocket.java , contains the code to create the sockets of the client .
+PrimeClientWorker.java , contains the code to send and recieve messages from the server
+CheckPrime.java , contains the code to check whether the number input from client is prime or not 
+Debug.java , contains the code to display the messages to the user at various debug levels
+
+SAMPLE OUTPUT:
+
+remote12:~/dp_assignment/sandeep-vempati/bug-model> run
+Buildfile: /import/linux/home/svempat2/dp_assignment/sandeep-vempati/bug-model/src/build.xml
+
+jar:
+
+run:
+
+[java] 
+[java] Enter your Prime number: 
+[java] 
+97
+[java] Select your Options :
+[java] 
+[java] 
+[java] 1) Set Client Name
+[java] 2) Enter number to query for prime
+[java] 3) What is the server response ? 
+[java] 4) Quit
+[java] your Options :
+[java] 
+[java] 
+3
+[java] YES It is prime
+[java] Select your Options :
+[java] 
+[java] 
+[java] 1) Set Client Name
+[java] 2) Enter number to query for prime
+[java] 3) What is the server response ? 
+[java] 4) Quit
+[java] your Options :
+[java] 
+[java] 
+4
+
+BUILD SUCCESSFUL
+Total time: 1 minute 42 seconds
+vempati@ubuntu:~/dp_assignment/proj2/vempati_sandeep_assign1/primeService$
+
+
+Assuming you are in the directory containing this README:
+
+TO COMPILE: 
+ant -buildfile src/build.xml all
+
+TO RUN:
+To run as the server I am replacing the args1="server" and args2="portnumber" in the ant file .
+To run as the client I am replacing the args1="client" and args2="portnumber" in the ant file .
+ant -buildfile src/build.xml run
+
+TO CLEAN:
+ant -buildfile src/build.xml clean
+
+To create tarball for submission
+ant -buildfile src/build.xml tarzip
+
+EXTRA CREDIT:
+
+N/A
+
+
+BIBLIOGRAPHY:
+
+http://www.tutorialspoint.com/java/java_documentation.htm
+
+
+ACKNOWLEDGEMENTS:
+
+cs542 LISTSERV
